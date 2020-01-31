@@ -1,8 +1,6 @@
 # Desafio 1: Conceitos do NodeJS
 > Se divirta criando os seus projetos.
 
-! [] (header.png)
-
 ## Versão
 
 <a href="https://nodejs.org/pt/"> NodeJS 12.14.1 </a>
@@ -24,7 +22,7 @@ dev de fios
 Adicionando um novo método de projeto do POST, chame um URL http://localhost:3202/projects/ Código que o seu projeto será criado /tasks?title= iformar os tasks que quiser seguir o exemplo abaixo:
 
 ``
-http://localhost:3202/projects/1/tasks?title=Primeiro Cadastro,Segundo tarefas
+http://localhost:3202/projects/1/tasks?title=Primeiro Cadastro,Segundo tasks
 ``
 
 Corpo da requisição:
@@ -33,7 +31,7 @@ JSON
 
 ``
 {
-	"title": "Criar Novo Projeto"
+  "title": "Criar Novo Projeto"
 }
 ``
 
@@ -43,7 +41,7 @@ JSON
 
 ``
 {
-  "1": {
+  "1":{
     "id": "1",
     "title": "Criar Novo Projeto",
     "tarefas": [
