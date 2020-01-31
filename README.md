@@ -19,7 +19,7 @@ dev de fios
 
 ## Usando a API
 
-Adicionando um novo método de projeto do POST, chame um URL http://localhost:3202/projects/ Código que o seu projeto será criado /tasks?title= iformar os tasks que quiser seguir o exemplo abaixo:
+Adicionando um novo projeto com método POST, chame um URL http://localhost:3202/projects/ Código que o seu projeto será criado /tasks?title= iformar os tasks 'tarefas' que quiser, seguir o exemplo abaixo:
 
 ````sh
 http://localhost:3202/projects/1/tasks?title=Primeiro Cadastro,Segundo tasks
@@ -35,7 +35,7 @@ JSON
 }
 ````
 
-Ele retornou todos os projetos cadastrados e o que acabou de ser cadastrado:
+Ele retorna todos os projetos cadastrados e o que acabou de ser cadastrado:
 
 JSON
 
@@ -54,9 +54,9 @@ JSON
 }
 ````
 
-Buscando todos os projetos registrados método GET, chame um URL http://localhost:3202/projects/
+Buscando todos os projetos registrados, método GET, chame um URL http://localhost:3202/projects/
 
-Ele retornará todos os projetos cadastrados:
+Ele retorna todos os projetos cadastrados:
 
 JSON
 
@@ -84,14 +84,14 @@ JSON
 }
 ````
 
-Buscando um projeto registrado de acordo com o código informado GET, chame um URL http://localhost:3202/projects/ Código do projeto
+Buscando um projeto registrado de acordo com o código informado, método GET, chame um URL http://localhost:3202/projects/ Código do projeto
 
 
 ````sh
 http://localhost:3202/projects/1
 ````
 
-Ele retornará todos os projetos cadastrados:
+Ele retorna todo o projetos cadastrado:
 
 JSON
 ````sh
@@ -109,7 +109,7 @@ JSON
 }
 ````
 
-Alterando o projeto registrado de acordo com o código informado método PUT, chame um URL http://localhost:3202/projects/ Código do projeto
+Alterando um projeto cadastrado de acordo com o código informado, método PUT, chame um URL http://localhost:3202/projects/ Código do projeto
 
 
 ````sh
@@ -125,7 +125,7 @@ JSON
 }
 ````
 
-Ele retornou todos os projetos registrados, incluindo o que foi alterado:
+Ele retorna todos os projetos registrados, incluindo o que foi alterado:
 
 JSON
 
@@ -153,14 +153,14 @@ JSON
 }
 ````
 
-Excluindo um projeto registrado de acordo com o código informado DELETE, chame um URL http://localhost:3202/projects/ Código do projeto
+Excluindo um projeto registrado de acordo com o código informado, método DELETE, chame um URL http://localhost:3202/projects/ Código do projeto
 
 
 ````sh
 http://localhost:3202/projects/1
 ````
 
-Ele retornou o código:
+Ele retornou o código de sucesso:
 
 ````sh
 200
