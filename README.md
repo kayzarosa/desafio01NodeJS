@@ -9,31 +9,39 @@
 
 ## Instalação
 
-`` sh
+``
 instalação de fios 
-`` ``
+``
 
 ## Iniciar uma API
 
-`` sh
+``
 dev de fios
-`` ``
+``
 
 ## Usando a API
 
-Adicionando um novo método de projeto do POST, chame um URL http: // localhost: 3202 / projects / Relatório de Código que o seu projeto será criado / tasks? Title = Relatório ou mais títulos selecionados por ordem de seguir o exemplo abaixo:
+Adicionando um novo método de projeto do POST, chame um URL http://localhost:3202/projects/ Código que o seu projeto será criado /tasks?title= iformar os tasks que quiser seguir o exemplo abaixo:
 
-`` sh
-http: // localhost: 3202 / projects / 1 / tasks? title = Primeiro Cadastro, Segundo tarefas
-`` ``
+``
+http://localhost:3202/projects/1/tasks?title=Primeiro Cadastro,Segundo tarefas
+``
+
 Corpo da requisição:
-`` sh
+
+JSON
+
+``
 {
 	"title": "Criar Novo Projeto"
 }
-`` ``
+``
+
 Ele retornou todos os projetos cadastrados e o que acabou de ser cadastrado:
-`` sh
+
+JSON
+
+``
 {
   "1": {
     "id": "1",
@@ -46,12 +54,15 @@ Ele retornou todos os projetos cadastrados e o que acabou de ser cadastrado:
     ]
   }
 }
-`` ``
+``
 
-Buscando todos os projetos registrados método GET, chame um URL http: // localhost: 3202 / projects /
+Buscando todos os projetos registrados método GET, chame um URL http://localhost:3202/projects/
 
 Ele retornará todos os projetos cadastrados:
-`` sh
+
+JSON
+
+``
 {
   "1": {
     "id": "1",
@@ -73,13 +84,17 @@ Ele retornará todos os projetos cadastrados:
     ]
   }
 }
-`` ``
-Buscando um projeto registrado de acordo com o código informado GET, chame um URL http: // localhost: 3202 / projects / Relatório de código do projeto
-`` sh
-http: // localhost: 3202 / projects / 1
-`` ``
+``
+Buscando um projeto registrado de acordo com o código informado GET, chame um URL http://localhost:3202/projects/ Código do projeto
+
+``
+http://localhost:3202/projects/1
+``
+
 Ele retornará todos os projetos cadastrados:
-`` sh
+
+JSON
+``
 {
   "1": {
     "id": "1",
@@ -92,19 +107,28 @@ Ele retornará todos os projetos cadastrados:
     ]
   }
 }
-`` ``
-Alterando o projeto registrado de acordo com o código informado método PUT, chame um URL http: // localhost: 3202 / projects / Relatório de código do projeto
-`` sh
-http: // localhost: 3202 / projects / 1
-`` ``
+``
+
+Alterando o projeto registrado de acordo com o código informado método PUT, chame um URL http://localhost:3202/projects/ Código do projeto
+
+``
+http://localhost:3202/projects/1
+`` 
+
 Corpo da requisição:
-`` sh
+
+JSON
+`` 
 {
 	"title": "Alterar Projeto"
 }
-`` ``
+``
+
 Ele retornou todos os projetos registrados, incluindo o que foi alterado:
-`` sh
+
+JSON
+
+``
 {
   "1": {
     "id": "1",
@@ -126,12 +150,15 @@ Ele retornou todos os projetos registrados, incluindo o que foi alterado:
     ]
   }
 }
-`` ``
-Excluindo um projeto registrado de acordo com o código informado DELETE, chame um URL http: // localhost: 3202 / projects / Relatório de código do projeto
-`` sh
-http: // localhost: 3202 / projects / 1
-`` ``
+``
+Excluindo um projeto registrado de acordo com o código informado DELETE, chame um URL http://localhost:3202/projects/ Código do projeto
+
+``
+http://localhost:3202/projects/1
+``
+
 Ele retornou o código:
-`` sh
+
+``
 200
-`` ``
+``
