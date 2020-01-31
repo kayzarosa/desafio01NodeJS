@@ -7,33 +7,33 @@
 
 ## Instalação
 
-``
+````sh
 instalação de fios 
-``
+````
 
 ## Iniciar uma API
 
-``
+````sh
 dev de fios
-``
+````
 
 ## Usando a API
 
 Adicionando um novo método de projeto do POST, chame um URL http://localhost:3202/projects/ Código que o seu projeto será criado /tasks?title= iformar os tasks que quiser seguir o exemplo abaixo:
 
-``
+````sh
 http://localhost:3202/projects/1/tasks?title=Primeiro Cadastro,Segundo tasks
-``
+````
 
 Corpo da requisição:
 
 JSON
 
-``
+````sh
 {
   "title": "Criar Novo Projeto"
 }
-``
+````
 
 Ele retornou todos os projetos cadastrados e o que acabou de ser cadastrado:
 
@@ -60,7 +60,7 @@ Ele retornará todos os projetos cadastrados:
 
 JSON
 
-``
+````sh
 {
   "1": {
     "id": "1",
@@ -82,17 +82,19 @@ JSON
     ]
   }
 }
-``
+````
+
 Buscando um projeto registrado de acordo com o código informado GET, chame um URL http://localhost:3202/projects/ Código do projeto
 
-``
+
+````sh
 http://localhost:3202/projects/1
-``
+````
 
 Ele retornará todos os projetos cadastrados:
 
 JSON
-``
+````sh
 {
   "1": {
     "id": "1",
@@ -105,28 +107,29 @@ JSON
     ]
   }
 }
-``
+````
 
 Alterando o projeto registrado de acordo com o código informado método PUT, chame um URL http://localhost:3202/projects/ Código do projeto
 
-``
+
+````sh
 http://localhost:3202/projects/1
-`` 
+````
 
 Corpo da requisição:
 
 JSON
-`` 
+````sh
 {
 	"title": "Alterar Projeto"
 }
-``
+````
 
 Ele retornou todos os projetos registrados, incluindo o que foi alterado:
 
 JSON
 
-``
+````sh
 {
   "1": {
     "id": "1",
@@ -148,15 +151,17 @@ JSON
     ]
   }
 }
-``
+````
+
 Excluindo um projeto registrado de acordo com o código informado DELETE, chame um URL http://localhost:3202/projects/ Código do projeto
 
-``
+
+````sh
 http://localhost:3202/projects/1
-``
+````
 
 Ele retornou o código:
 
-``
+````sh
 200
-``
+````
