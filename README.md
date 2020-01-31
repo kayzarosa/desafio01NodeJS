@@ -14,13 +14,13 @@
 ## Instalação
 
 ````sh
-instalação de fios 
+yarn install
 ````
 
 ## Iniciar uma API
 
 ````sh
-dev de fios
+yarn dev
 ````
 
 ## Usando a API
