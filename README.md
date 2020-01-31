@@ -1,4 +1,10 @@
-# Desafio 1: Conceitos do NodeJS
+<h1 align="center">
+    <img alt="Rocketseat GoStack" src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-header.png" width="200px" />
+</h1>
+
+## Rocketseat
+
+# :rocket: Desafio 1: Conceitos do NodeJS
 > Se divirta criando os seus projetos.
 
 ## Versão
@@ -165,3 +171,4 @@ Ele retornou o código de sucesso:
 ````sh
 200
 ````
+Feito com ♥ by Kayza :wave:
