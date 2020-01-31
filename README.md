@@ -39,7 +39,7 @@ Ele retornou todos os projetos cadastrados e o que acabou de ser cadastrado:
 
 JSON
 
-``
+````sh
 {
   "1":{
     "id": "1",
@@ -52,7 +52,7 @@ JSON
     ]
   }
 }
-``
+````
 
 Buscando todos os projetos registrados método GET, chame um URL http://localhost:3202/projects/
 
